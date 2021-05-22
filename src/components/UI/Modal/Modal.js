@@ -4,7 +4,10 @@ import Backdrop from "../Backdrop/Backdrop";
 import React, { Component } from "react";
 
 const areEqual = (prevProps, nextProps) => {
-  return prevProps.show === nextProps.show;
+  return (
+    prevProps.show === nextProps.show &&
+    prevProps.children === nextProps.children
+  );
 };
 
 class Modal extends Component {
@@ -13,7 +16,7 @@ class Modal extends Component {
   // }
 
   componentDidUpdate() {
-    console.log("[Modal]: Updated");
+    // console.log("[Modal]: Updated");
   }
 
   render() {
