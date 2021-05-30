@@ -4,3 +4,6 @@
     npm install --save axios
 
 ### DB used - [Firebase](https://console.firebase.google.com/u/0/project/db-burger-builder-ebf95/database/db-burger-builder-ebf95-default-rtdb/data) 
+
+### Install React Router
+    npm i --save react-router-dom
